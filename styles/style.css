@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    background-color: #1f1e1f;
+    position: fixed;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: auto;
+    width: 70px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    align-items: center;
+}
+
+.menu__item a {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 3rem 1rem 2rem 1rem;
+    transition: all 200ms ease-in;
+}
+
+.menu__item a:hover {
+    background-color: #3333;
+    border-bottom: 4px solid #ffc506;
+    color: #ffc506; 
+}
+
+
+/* Primeira Seção */
+.primeira__section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(29,29,29,0.8), rgba(29,29,29,0.8)),url("../img/fundopizza.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50px;
+}
+
+.conteudo__principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.primeira__section h1 {
+    font-size: 6rem;
+    color: #ffc506;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.primeira__section h2 {
+    color: rgb(177, 177, 177);
+    font-size: 3.5rem;
+    margin-bottom: 8rem;
+}
+
+.botoes {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes button {
+    font-size: 1.8rem;
+    height: 60px;
+    width: 230px;
+    background-color: #ffc506;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all 400ms ease-in;
+    font-weight: 600;
+}
+
+.botoes button:hover {
+    background: transparent;
+    border: 2px solid #ffc506;
+    color: #ffc506;
+}
+
+/* Segunda Seção */
+.segunda__section {
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre__nos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre__nos__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre__nos__conteudo h2 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.sobre__nos__conteudo p {
+    width: 600px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.sobre__nos__imagem img{
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155, 155, 155);
+}
+
+/* Cardápio */
+.cardapio {
+    width: 100vw;
+    background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(15, 15, 15, 0.8)), url("../img/cardapio.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.cardapio h2 {
+    font-size: 5rem;
+    color: #e6e6e6;
+    text-transform: uppercase;
+}
+
+.cardapio__container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 22% 22% 22% 22%;
+    width: 90%;
+    gap: 2rem;
+    margin: 1.6rem auto 0 auto;
+}
+
+.cardapio__item {
+    display: flex;
+    flex-direction: column;
+    background-color: #5e5252;
+}
+
+.cardapio__item__imagem {
+    border: 2px solid black;
+}
+
+.cardapio__item__imagem img {
+    width: 100%;
+    height: 200px;
+}
+
+.cardapio__item__conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(221, 221, 221);
+    padding: 1.5rem;
+    border: 2px solid black;
+}
+
+.cardapio__item__conteudo h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.cardapio__item__conteudo h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+}
+
+.cardapio__item__conteudo h4 span {
+    color: #585858;
+    text-decoration: underline;
+}
+
+.cardapio__item__conteudo button {
+    padding: 1rem 5rem;
+    background-color: #ffc506;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0.6rem;
+    margin-top: 0.5rem;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.cardapio__item__conteudo button:hover {
+    background-color: #5e5252;
+    color: white;
+}
+
+/* Contatos */
+.contatos {
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 4rem 0;
+    gap: 2.5rem;
+}
+
+.contatos h2 {
+    font-size: 4rem;
+    color: white;
+}
+
+.contatos__container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    width: 650px;
+    color: white;
+}
+
+.contatos__container span {
+    cursor: pointer;
+}
+
+
+.contatos__container span:hover {
+    color: #ffc506;
+}
+
+/* Rodape */
+.rodape {
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .primeira__section h1 {
+        font-size: 5rem;
+    }
+
+    .primeira__section h2 {
+        font-size: 3rem;
+    }
+
+    .segunda__section {
+        padding-top: 3rem;
+    }
+
+    .sobre__nos {
+        display: block;
+    }
+
+    .sobre__nos img {
+        width: 600px;
+        margin-left: -2px;
+    }
+}
+
+@media screen and (max-width: 1145px) {
+    .cardapio__container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    html {
+        font-size: 50%;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        height: 15%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu__hamburguer {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cabecalho.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(30, 31, 30, 0.8);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho.on .logo {
+        display: none;
+    } 
+
+    .cabecalho.on .menu__hamburguer {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .cabecalho.on .menu {
+        display: block;
+    }
+
+    .cabecalho.on .menu li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecalho.on .menu li a {
+        font-size: 2rem;
+    }
+
+    .cabecalho.on .menu__hamburguer .two {
+        opacity: 0;
+    }
+
+    .cabecalho.on .menu__hamburguer .one {
+        transform: rotate(45deg) translate(6px, 1px);
+    }
+
+    .cabecalho.on .menu__hamburguer .three {
+        transform: rotate(-45deg) translate(10px, -6px);
+    }
+
+    .one, 
+    .two,
+    .three {
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .cardapio__container {
+        grid-template-columns: repeat(2, minmax(50px, 350px));
+    }
+
+    .contatos__container {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contatos__container div {
+        margin: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .conteudo__principal h1{
+        width: 500px;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .conteudo__principal h2 {
+        font-size: 2rem;
+    }
+
+    .cardapio__container {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
+    }
+    .sobre__nos img {
+        width: 400px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+    .sobre__nos p {
+        text-align: center;
+        width: 400px;
+    }
+
+    .contatos__container {
+        width: 300px;
+    }
+
+    .cardapio__item__conteudo h4 {
+        grid-template-columns: 100px 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+.conteudo__principal h1 {
+    width: 350px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.conteudo__principal h2 {
+    width: 200px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+    .botoes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        gap: 3rem;
+    }
+
+    .botoes button {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .sobre__nos img {
+        width: 250px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .sobre__nos p {
+        text-align: center;
+        width: 250px;
+    }
+
+    .itens__cardapio {
+        width: 50%;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
+    }
+
+    .itens__cardapio img {
+        width: 80%;
+        height: auto;
+    }
+
+    .itens__cardapio div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .itens__cardapio .cardapio__item__conteudo {
+        width: 100%;
+        height: 150px;
+    }
+
+    .itens__cardapio .cardapio__item__conteudo h4 {
+        grid-template-columns: 93px 150px;
+    }
+
+    .itens__cardapio button {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
